@@ -1,0 +1,105 @@
+.header{
+    height: 10vh;
+    /*background-color: hsla(250, 93%, 48%, 0.9);*/
+    padding: 5vh;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 4vh;
+    
+    
+}
+.header ul{
+    display: flex;
+    float:right;
+    clear: right;
+    
+}
+.header ul li{
+    list-style-type: none;
+    color:hsla(250, 93%, 48%, 0.9);
+    
+    padding: 1vh;
+    font-weight: bold;
+    margin-top: -6vh;
+    border-radius:2vh;
+    border:1.5px hsla(250, 93%, 48%, 0.9) solid;
+    
+}
+*{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 1vh;
+}
+.myname{
+    margin-top: -3vh;
+    font-size: 1.5em;
+    padding: 1vh;
+    background-color: white;
+    width: fit-content;
+    color: hsla(250, 93%, 48%, 0.9); 
+   
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+.navigation-menu{
+    border-top: 1px hsla(250, 93%, 48%, 0.9) solid;
+    border-bottom: 1px hsla(250, 93%, 48%, 0.9) solid;
+    padding: 2vh;
+    box-sizing: border-box;
+    margin-bottom: 4vh;
+    
+}
+.about-info{
+    height: 40vh;
+    background-image: url("bac1.jpg");
+    background-size: cover;
+    margin-top: -3vh;
+    margin-bottom: 12vh;   
+}
+.acolumn1{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-right: 1px hsla(250, 93%, 48%, 0.9) solid;
+    box-sizing: border-box;
+    padding: 2vh;
+    
+    
+    
+}
+.acolumn1 h1{
+    font-style: italic;
+    color: hsla(330, 83%, 45%, 0.9);
+}
+.acolumn1 p{
+    text-align: justify;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 25px;
+    font-size: 1.2em;
+}
+.acolumn2{
+    float: left;
+    text-align: center;
+    width: 40%;
+    text-align: justify;
+    clear: right;
+}
+.acolumn2 h2{
+    margin-left: 40%;
+    color: hsla(330, 83%, 45%, 0.9);
+    padding-top: 4vh;
+}
+.im{
+    height: 90vh;
+    max-width: 90%;
+    text-align: center;
+}
+.im img{
+    height: 70vh;
+}
+
