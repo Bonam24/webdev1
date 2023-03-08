@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+    <script>
+      function changecolor(color, bcolor){
+        document.body.style.backgroundColor = color; 
+        document.body.style.color = bcolor;
+      }
+      
+    </script>
+   
+</head>
+<body>
+  <h1>Click a button to change a color</h1>
+  <form action="">
+    <fieldset>
+      <input type="button"
+      value="blue"
+      onclick="changecolor('blue','white')"
+      >
+    <input type="button"
+    value="red"
+    onclick="changecolor('red', 'yellow')"
+    >
+
+    <input type="button"
+    value="grey"
+    onclick="changecolor('#ff4b09','#06bd6a')"
+    >
+
+    <input type="button"
+    value="white"
+    onclick="changecolor('white')"
+    >
+
+    <input type="button"
+    value="white"
+    onclick="changecolor('white')"
+    >
+
+    </fieldset>
+  </form>
+  
+</body>
+</html>
