@@ -4,6 +4,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        #banner{
+            background-color: blue;
+            padding-top: 5%;
+            padding-left: 10%;
+            height: 30%;
+        }
+        #buttons{
+            margin-top: 1em;
+            padding-left: 1em;
+        }
+    </style>
 </head>
 <body>
    
@@ -15,59 +30,24 @@
         <input type="button" value="next" onclick="nextcolor()">
     </div>
     <script>
-        let x=0;
-        function nextcolor(){
-            x=x+1;
-            if(x>4){
-                x=0;
-            }
-            
-            if(x<5){
-                if(x==0){
-                    document.body.style.color = "red";
-                }
-                 else if(x==1){
-                    document.body.style.color = "green"; 
-                }
-                 else if(x==2){
-                    document.body.style.color = "yellow"; 
-                }
-                else if(x==3){
-                    document.body.style.color = "blue"; 
-                }
-                else if(x==4){
-                    document.body.style.color = "pink"; 
-                }
-            }
-            
-             
+        var x = ["blue","green","red","yellow","purple"]
+        var i=0;
+       function nextcolor(){
+       
+        i=i+1;
+        if(i==x.length){
+            i=0;
         }
-        function previouscolor(){
-            x=x-1;
-            if(x==-1){
-                x=4;
-            } 
+        document.getElementById("banner").style.backgroundColor= x[i];
+       }
+       function previouscolor(){
+        i=i-1;
+        if(i<0){
+            i=x.length-1;
+        }
+        document.getElementById("banner").style.backgroundColor= x[i];
+       }
 
-            if(x>-1){
-                if(x==0){
-                    document.body.style.color = "red";
-                }
-                 else if(x==1){
-                    document.body.style.color = "green"; 
-                }
-                 else if(x==2){
-                    document.body.style.color = "yellow"; 
-                }
-                else if(x==3){
-                    document.body.style.color = "blue"; 
-                }
-                else if(x==4){
-                    document.body.style.color = "pink"; 
-                }
-            }
-            
-           
-        }
     </script>
 </body>
 </html>
