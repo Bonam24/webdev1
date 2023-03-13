@@ -26,20 +26,31 @@
         function move(){
             var elem = document.getElementById("animate");
             var pos =0;
+            var check = 0;
             var id = setInterval(frame,5);
             function frame(){
-                if(pos==350){
+                if(check>700){
                     clearInterval(id); 
                      
                 }
+                else if(check>350){
+                    pos--;
+                    check++;
+                    elem.style.top = pos + "px";
+                    elem.style.left = pos + "px";
+
+                }
                 else{
                     pos++;
+                    check++;
                     elem.style.top = pos + "px";
                     elem.style.left = pos + "px";
                 }
                 }
                 
+            
             }
+            
         
     </script>
 </body>
