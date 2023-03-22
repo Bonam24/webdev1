@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+       form{
+        width: 70%;
+        background-color: aqua;
+        margin: 2em;
+        height: 35em;
+       }
+
+       form label{
+        line-height:2.2em;
+        margin-left: 1em;
+       }
+       input{
+        width: 30%;
+       }
+       #dt{
+        width: 1em;
+       }
+       .head{
+        font-weight: bold;
+       }
+       @media only screen and (max-width:800px){
+        form{
+            width: 70%;
+            background-color: rgb(66, 83, 40);
+        }
+        input{
+            width: 40%;
+        }
+       }
+       @media only screen and (max-width:700px){
+        form{
+            width: 70%;
+            background-color: greenyellow;
+        }
+       }
+
+       @media only screen and (max-width:400px){
+        form{
+            width: 80%;
+            background-color: grey;
+        }
+       }
+      
+       
+       
+       
+
+    </style>
+</head>
+<body>
+    <form class="fort"
+    action="">
+        <label class="head" >Personal information:</label><br>
+        <label for="">First name:</label>
+        <input type="text"><br>
+        <label for="">middle name:</label>
+        <input type="text"><br>
+        <label for="">surname:</label>
+        <input type="text"><br>
+        <label for="" id="dt">Gender:</label>
+        <label for="" id="dt">Female</label>
+        <input type="radio" id="dt" name="rd">
+        <label for="" id="dt">Male</label>
+        <input type="radio" id="dt" name="rd"><br>
+        <label class="head">Contact information:</label><br>
+        <label for="">mobile number:</label>
+        <input type="tel"><br>
+        <label for="">email:</label>
+        <input type="email"><br>
+        <label for="">postal address:</label>
+        <input type="text"><br>
+        <label for="">physical address</label>
+        <input type="text"><br>
+        <label for="">next of kin mobile number</label>
+        <input type="tel"><br>
+        <label class="head">Professional information</label><br>
+        <label for="">Profession</label>
+        <input type="text"><br>
+        <label for="">years of experience</label>
+        <input type="number">
+    </form>
+</body>
+</html>
